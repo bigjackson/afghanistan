@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>msidneoon</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: 'arial', sans-serif;
+        font-size: 30px;
+        text-align: center;
+      }
+      h1 {
+        color: black;
+        text-shadow: 0 0 20px #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="neon-text-1">welcome to moonside.</h1>
+    <h1 id="neon-text-2">wecomel to soonmide.</h1>
+    <h1 id="neon-text-3">moonwel ot cosidme.</h1>
+
+    <script>
+      function changeColor() {
+        var text1 = document.getElementById("neon-text-1");
+        var text2 = document.getElementById("neon-text-2");
+        var text3 = document.getElementById("neon-text-3");
+        var colors = ["#ff00ff", "#00ffff", "#ffff00", "#ff0000", "#00ff00", "#0000ff"];
+        var randomIndex = Math.floor(Math.random() * colors.length);
+        var randomColor = colors[randomIndex];
+        text1.style.textShadow = "0 0 20px " + randomColor;
+        text2.style.textShadow = "0 0 20px " + randomColor;
+        text3.style.textShadow = "0 0 20px " + randomColor;
+      }
+
+      setInterval(changeColor, 1000); 
+      milliseconds (1 second);
+    </script>
+  </body>
+</html>
